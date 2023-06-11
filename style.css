@@ -1,13 +1,9 @@
-/* styles.css */
 
-/* Réinitialisation des styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Style général */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -48,7 +44,6 @@ footer {
   margin-top: 40px;
 }
 
-/* Style spécifique pour les onglets */
 
 
 
@@ -100,7 +95,6 @@ footer {
   font-size: 18px;
 }
 
-/* Style cyberpunk pour le formulaire de contact */
 form {
   max-width: 500px;
   margin: 0 auto;
@@ -367,4 +361,120 @@ form input[type="submit"]:hover {
     margin-left: 0;
     margin-right: 0;
   }
+}
+#about {
+  padding: 40px;
+  background-color: #11054b;
+  color: #fff;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#about p {
+  margin-bottom: 10px;
+}
+
+/* Effet néon pour le texte */
+.neon-text {
+  position: relative;
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #29b6f6;
+  text-shadow: 0 0 10px #29b6f6, 0 0 20px #29b6f6, 0 0 30px #29b6f6, 0 0 40px #29b6f6, 0 0 50px #29b6f6;
+  animation: neon-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+  0% {
+    text-shadow: 0 0 10px #29b6f6, 0 0 20px #29b6f6, 0 0 30px #29b6f6, 0 0 40px #29b6f6, 0 0 50px #29b6f6;
+  }
+  100% {
+    text-shadow: 0 0 10px #4dd0e1, 0 0 20px #4dd0e1, 0 0 30px #4dd0e1, 0 0 40px #4dd0e1, 0 0 50px #4dd0e1;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: flex-end;
+}
+
+.profile-content {
+  position: relative;
+}
+
+.profile-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5e0961;
+  margin-right: 8px;
+  box-shadow: 0 0 6px #29b6f6, 0 0 8px #29b6f6;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.status-text {
+  font-size: 16px;
+}
+
+.profile-links {
+  display: flex;
+  align-items: center;
+}
+
+.profile-links a {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.profile-links a:hover {
+  color: #4dd0e1;
+}
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #29b6f6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-btn:hover {
+  background-color: #0288d1;
+}
+
+.btn-download {
+  background-color: #4dd0e1;
+}
+
+.btn-download:hover {
+  background-color: #00acc1;
 }

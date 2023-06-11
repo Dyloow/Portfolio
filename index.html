@@ -7,102 +7,113 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
-
 </head>
 <body>
   <header>
-	<div class="lasvegas">
-		My <span>port</span><span class="delay">fo</span>lio
-	  </div>    <nav>
+    <div class="lasvegas">
+      My <span>port</span><span class="delay">fo</span>lio
+    </div>
+    <nav>
       <ul>
         <li><a href="#cv" onclick="openTab(event, 'cv')" class="custom-btn btn-14">CV</a></li>
-        <li><a href="#contact" onclick="openTab(event, 'contact')"class="custom-btn btn-14">Me Contacter</a></li>
-        <li><a href="#projets" onclick="openTab(event, 'projets')"class="custom-btn btn-14">Mes Projets</a></li>
+        <li><a href="#contact" onclick="openTab(event, 'contact')" class="custom-btn btn-14">Me Contacter</a></li>
+        <li><a href="#projets" onclick="openTab(event, 'projets')" class="custom-btn btn-14">Mes Projets</a></li>
+        <li><a href="#about" onclick="openTab(event, 'about')" class="custom-btn btn-14">À propos de moi</a></li>
       </ul>
     </nav>
   </header>
-  <!DOCTYPE html>
   
   <section id="cv" class="tab-content">
-	<h2>CV</h2>
-	<div class="box">
-	</div>
-</div>
+    <h2>CV</h2>
+		<a href="CV_2023-06-07_Walid_Lachiri.pdf" class="custom-btn btn-download" download>Télécharger CV</a>
 
+    <div class="box">
+    </div>
+  </section>
+  
+  <section id="contact" class="tab-content">
+    <h2>Me Contacter</h2>
+    <form action="https://formspree.io/f/mpzeggjg" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email">
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <input type="submit" value="Envoyer">
+    </form>
+  </section>
+  
+  <section id="projets" class="tab-content">
+    <h2>Mes Projets</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="deadbird.png" alt="deadbird">
+        <h3>DeadBird</h3>
+        <p>Reproduction du Réseau social Twitter</p>
+        <p>PHP/HTML/CSS/JS/MYSQL/AJAX</p>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+      </div>
+      <div class="card">
+        <img src="cinema.webp" alt="cinema">
+        <h3>My cinema</h3>
+        <p>Creation d'un site technique pour un cinéma</p>
+        <p>PHP/HTML/CSS/MYSQL/BOOSTRAP</p>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+      </div>
+      <div class="card">
+        <img src="rencontre.jpg" alt="rencontre">
+        <h3>My Meetic</h3>
+        <p>Reproduction d'un site de rencontre</p>
+        <p>PHP/HTML/CSS/JS/MYSQL/</p>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+      </div>
+      <div class="card">
+        <img src="puissance.avif" alt="Puissance 4">
+        <h3>Puissance 4</h3>
+        <p>Reproduction d'un puissance 4'</p>
+        <p>HTML/CSS/JS/</p>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+      </div>
+      <div class="card">
+        <img src="1aa1blank.jpg" alt="Projet 3">
+        <h3>Futur Projet</h3>
+        <p>Incoming</p>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+      </div>
+      <div class="card">
+        <img src="1aa1blank.jpg" alt="Projet 3">
+        <h3>Futur Projet</h3>
+        <p>Incoming</p>
+        <a href="#"><i class="fab fa-github"></i>Github</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="tab-content">
+	<h2 class="section-title" title="Merci chat gpt pour ce texte ">À propos de moi</h2>
+	<div class="profile">
+	  <div class="profile-content">
+		<img src="photo.jpg" alt="Ma photo" class="profile-image">
+		<div class="status">
+		  <div class="status-dot"></div>
+		  <span class="status-text">En recherche d'alternance</span>
+		</div>
+	  </div>
+	  <div class="profile-links">
+		<a href="https://github.com/Dyloow" target="_blank"><i class="fab fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/walid-lachiri-55777a270/" target="_blank"><i class="fab fa-linkedin"></i></a>
+	  </div>
+	</div>
+	<p class="neon-text">Je suis un grand fan de One Piece et de l'univers de Warcraft en général, une passion que j'ai héritée de ma maman. Depuis un jeune âge, j'ai eu un clavier entre les mains, mais c'est en 2014, lorsque j'avais 11 ans, que j'ai regardé Matrix pour la première fois. La fameuse scène de la robe rouge m'a fasciné et a éveillé en moi une véritable passion pour la programmation. Depuis ce jour, j'adore me creuser la tête sur des algorithmes complexes, cherchant des solutions innovantes tout en découvrant que parfois une simple fonction déjà existante peut résoudre le problème.
+		Aujourd'hui, je poursuis mes études à la web@cadémie by Epitech avec une ambition claire : devenir développeur FullStack, bien que j'aie une préférence marquée pour le back-end. Je suis constamment à la recherche de nouveaux défis, prêt à me plonger dans des projets passionnants et stimulants.
+		Je suis actuellement à la recherche d'une alternance de 14 mois à partir de septembre 2023. Si vous recherchez un développeur passionné et motivé pour rejoindre votre équipe, n'hésitez pas à me contacter. Je suis impatient de mettre mes compétences et ma créativité au service de votre entreprise.</p>
   </section>
   
   
-	<section id="contact" class="tab-content">
-		<h2>Me Contacter</h2>
-		<form
-		action="https://formspree.io/f/mpzeggjg"
-		method="POST"
-	  >
-		<label>
-		  Your email:
-		  <input type="email" name="email">
-		</label>
-		<label>
-		  Your message:
-		  <textarea name="message"></textarea>
-		</label>
-		<!-- your other form fields go here -->
-		<input type="submit"></input>
-	  </form>
-	  </section>
-	  
-  
-	  <section id="projets" class="tab-content">
-		<h2>Mes Projets</h2>
-		<div class="card-container">
-		  <div class="card">
-			<img src="deadbird.png" alt="deadbird">
-			<h3>DeadBird</h3>
-			<p>Reproduction du Réseau social Twitter</p>
-			<p>PHP/HTML/CSS/JS/MYSQL/AJAX</p>
-			<a href="#"><i class="fab fa-github"></i>Github</a>
-		  </div>
-		  <div class="card">
-			<img src="cinema.webp" alt="cinema">
-			<h3>My cinema</h3>
-			<p>Creation d'un site technique pour un cinéma</p>
-			<p>PHP/HTML/CSS/MYSQL/BOOSTRAP</p>
-			<a href="#"><i class="fab fa-github"></i>Github</a>
-		  </div>
-		  <div class="card">
-			<img src="rencontre.jpg" alt="rencontre">
-			<h3>My Meetic</h3>
-
-			<p>Reproduction d'un site de rencontre</p>
-			<p>PHP/HTML/CSS/JS/MYSQL/</p>
-			<a href="#"><i class="fab fa-github"></i>Github</a>
-		  </div>
-		  <div class="card">
-			<img src="puissance.avif" alt="Puissance 4">
-			<h3>Puissance 4</h3>
-			<p>Reproduction d'un puissance 4'</p>
-			<p>HTML/CSS/JS/</p>
-			<a href="#"><i class="fab fa-github"></i>Github</a>
-		  </div>
-		  <div class="card">
-			<img src="1aa1blank.jpg" alt="Projet 3">
-			<h3>Futur Projet</h3>
-			<p>Incoming</p>
-			<a href="#"><i class="fab fa-github"></i>Github</a>
-		  </div>
-		  <div class="card">
-			<img src="1aa1blank.jpg" alt="Projet 3">
-			<h3>Futur Projet</h3>
-			<p>Incoming</p>
-			<a href="#"><i class="fab fa-github"></i>Github</a>
-		  </div>
-		</div>
-	  </section>
-	  
-  
-	<footer>
-	  <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
-	</footer>
-  </body>
-  </html>
-  
+  <footer>
+    <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
